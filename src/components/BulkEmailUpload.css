@@ -1,0 +1,410 @@
+.bulk-email-upload {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.upload-section {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.upload-section h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.csv-format-info {
+  background: #e3f2fd;
+  border-left: 4px solid #2196f3;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.csv-format-info h4 {
+  color: #1976d2;
+  margin-bottom: 10px;
+}
+
+.csv-format-info ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.csv-format-info li {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.csv-format-info code {
+  background: #f5f5f5;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+}
+
+.download-sample-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.download-sample-btn:hover {
+  background: #45a049;
+}
+
+.file-upload {
+  margin-bottom: 20px;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-label {
+  display: inline-block;
+  background: #2196f3;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.file-label:hover {
+  background: #1976d2;
+}
+
+.file-actions {
+  text-align: center;
+}
+
+.process-btn {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.process-btn:hover:not(:disabled) {
+  background: #f57c00;
+}
+
+.process-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.email-content-section {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.email-content-section h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.content-description {
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.content-description code {
+  background: #f5f5f5;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.email-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-form .form-group label {
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.subject-input,
+.body-textarea {
+  padding: 12px 16px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.subject-input:focus,
+.body-textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.body-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.send-requirement {
+  color: #666;
+  font-size: 14px;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.csv-preview {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.preview-header h4 {
+  color: #333;
+  margin: 0;
+}
+
+.toggle-preview-btn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.toggle-preview-btn:hover {
+  background: #5a6268;
+}
+
+.processing-summary {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.processing-summary p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.error-count {
+  color: #dc3545 !important;
+}
+
+.csv-errors {
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.csv-errors h5 {
+  color: #721c24;
+  margin-bottom: 10px;
+}
+
+.csv-errors ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.error-item {
+  color: #721c24;
+  margin-bottom: 5px;
+}
+
+.email-preview {
+  margin-bottom: 20px;
+}
+
+.email-preview h5 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.preview-table {
+  overflow-x: auto;
+}
+
+.preview-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.preview-table th,
+.preview-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.preview-table th {
+  background: #f8f9fa;
+  font-weight: bold;
+  color: #333;
+}
+
+.body-preview {
+  max-width: 200px;
+  word-wrap: break-word;
+}
+
+.more-emails {
+  color: #666;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.send-actions {
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.send-bulk-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.send-bulk-btn:hover:not(:disabled) {
+  background: #218838;
+}
+
+.send-bulk-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.bulk-results {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.bulk-results h4 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.results-summary {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.results-summary p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.results-summary .success {
+  color: #28a745 !important;
+  font-weight: bold;
+}
+
+.results-summary .failure {
+  color: #dc3545 !important;
+  font-weight: bold;
+}
+
+.failed-emails {
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+.failed-emails h5 {
+  color: #721c24;
+  margin-bottom: 10px;
+}
+
+.failed-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.failed-item {
+  color: #721c24;
+  margin-bottom: 8px;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .preview-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .preview-table {
+    font-size: 14px;
+  }
+
+  .preview-table th,
+  .preview-table td {
+    padding: 6px;
+  }
+
+  .body-preview {
+    max-width: 150px;
+  }
+}
