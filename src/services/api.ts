@@ -102,6 +102,9 @@ export const gmailAPI = {
 
   getEmailHistoryStats: (): Promise<EmailHistoryStats> =>
     api.get("/gmail/history/stats").then((res) => res.data),
+
+  disconnect: (): Promise<{ message: string; connected: boolean }> =>
+    api.delete("/gmail/disconnect").then((res) => res.data),
 };
 
 export default api;

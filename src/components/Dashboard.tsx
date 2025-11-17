@@ -12,6 +12,7 @@ const Dashboard: React.FC = () => {
   const [gmailStatus, setGmailStatus] = useState<GmailStatus | null>(null);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
+  const [disconnecting, setDisconnecting] = useState(false);
 
   // Email form state
   const [emailForm, setEmailForm] = useState<SendEmailRequest>({
@@ -60,6 +61,30 @@ const Dashboard: React.FC = () => {
     setEmailForm((prev) => ({ ...prev, [field]: value }));
   };
 
+  const handleDisconnectGmail = async () => {
+    if (
+      !window.confirm("Are you sure you want to disconnect your Gmail account?")
+    ) {
+      return;
+    }
+
+    setDisconnecting(true);
+    setError("");
+    setSuccess("");
+
+    try {
+      await gmailAPI.disconnect();
+      setSuccess("Gmail account disconnected successfully!");
+      await fetchGmailStatus();
+    } catch (err: any) {
+      setError(
+        err.response?.data?.error || "Failed to disconnect Gmail account"
+      );
+    } finally {
+      setDisconnecting(false);
+    }
+  };
+
   return (
     <div className="dashboard-container">
       <header className="dashboard-header">
@@ -95,6 +120,13 @@ const Dashboard: React.FC = () => {
                   {gmailStatus.expired && (
                     <p className="warning">⚠️ Token expired</p>
                   )}
+                  <button
+                    onClick={handleDisconnectGmail}
+                    disabled={disconnecting}
+                    className="disconnect-button"
+                  >
+                    {disconnecting ? "Disconnecting..." : "🔌 Disconnect Gmail"}
+                  </button>
                 </div>
               )}
             </div>
